@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>latihan java boi 04</title>
+</head>
+<body>
+	belajar bahasa javaboi di  kelas webprog <span id="kls">[tulis disini]</span>.
+
+	NAMA<br>
+	<input type="text" id="txNAMA">
+	<br>
+	<button onclick="kelas()"> Test </button>
+
+	<hr>
+
+	NIM<input type="text" id="txNIM">
+	<button onclick="checkNIM()">Check NIM</button>
+
+	<div id="hasil"></div>
+
+
+	<script>
+		function kelas(){
+			document.getElementById("kls").innerHTML="kelas B"
+			document.getElementById("txNAMA").value = "Morax"
+		}
+
+		function checkNIM(){
+			let hsl = document.getElementById("txNIM").value 
+			console.log("isi dari hsl: "+hsl)
+			document.getElementById(hasil)innerHTML="hasil pembacaan isi text box NIM adalah "+hsl
+		}
+	</script>
+</body>
+</html>
